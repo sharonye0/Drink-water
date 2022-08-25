@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --light-blue: #6d9bf2;
+    --lighter-blue: ;
+    --dark-blue: ;
+    --white: #fff;
+}
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+
+body {
+    background-color: #6d9bf2;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+}
+
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 8px;
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.big-cup {
+    color: blue;
+    background-color: var(--white);
+    width: 150px;
+    height: 350px;
+    border: 3px solid blue;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-bottom: 40px;
+}
+
+.the-empty-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgb(255, 255, 255);
+    height: 50%;
+    font-weight: 500;
+}
+
+.the-empty-half p {
+    font-weight: 400;
+}
+
+.the-full-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #00ccff;
+    height: 50%;
+
+    font-size: 32px;
+    font-weight: 500;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
