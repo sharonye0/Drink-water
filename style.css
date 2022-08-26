@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
-    --light-blue: #6d9bf2;
-    --lighter-blue: ;
-    --dark-blue: ;
+    --light-blue: #3494e4;
+    --fill-blue: #6ab3f8;
+    --border-color: #144fc6;
     --white: #fff;
 }
 
@@ -26,7 +26,7 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 
 body {
-    background-color: #6d9bf2;
+    background-color: var(--light-blue);
     font-family: 'Roboto', sans-serif;
     height: 100vh;
     overflow: hidden;
@@ -43,7 +43,6 @@ body {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -58,26 +57,51 @@ h3 {
     margin-bottom: 40px;
 }
 
-.big-cup {
-    color: blue;
+
+.cup {
+    color: var(--border-color);
     background-color: var(--white);
+    
     width: 150px;
     height: 350px;
-    border: 3px solid blue;
+    
+    border: 3px solid var(--border-color);
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     margin-bottom: 40px;
 }
 
-.the-empty-half {
+.big-cup {
+    display: flex;
+    flex-direction: column;
+}
+
+.small-cup {
+    color: var(--border-color);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 100px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin: 0;
+}
+
+.half {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    background-color: rgb(255, 255, 255);
-    height: 50%;
     font-weight: 500;
+}
+
+.the-empty-half {
+    flex: 1;
+    transition: 0.5s ease-in;
 }
 
 .the-empty-half p {
@@ -85,16 +109,32 @@ h3 {
 }
 
 .the-full-half {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #00ccff;
-    height: 50%;
-
+    background-color: var(--fill-blue);
     font-size: 32px;
-    font-weight: 500;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    height: 0;
+    transition: height 0.3s ease;
+    border-bottom-left-radius: 38px;
+    border-bottom-right-radius: 38px;
 }
 
+.selection-info {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.small-cups {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    cursor: pointer;
+}
+
+.small-cup:hover {
+    background-color: #a6d4ff;
+
+}
+
+.active-cups {
+    background-color: var(--fill-blue);
+    color: var(--white);
+}
