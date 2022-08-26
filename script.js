@@ -2,7 +2,6 @@ const smallCups = document.querySelectorAll(".small-cup");
 const bigCup = document.querySelector(".big-cup");
 const theEmptyHalf = document.querySelector(".the-empty-half");
 const theFullHalf = document.querySelector(".the-full-half");
-console.log(bigCup, theEmptyHalf, theFullHalf);
 
 let numOfCups = 0;
 let sumOfcups = 0;
