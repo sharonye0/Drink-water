@@ -25,9 +25,9 @@ function genrateMarkup(litersToFill) {
 }
 
 function updateCup() {
-   // to get the percentage of how much of the cup is full we have to get the number of cups then multiply is by 250
+   // to get the percentage of how much of the cup is full we have to get the number of cups then multiply it by 250
    // that's gonna give us the the amount of water we've poured in the big cup
-   //then we should divide by the total amount (the big cup capacity) and finally we multiply by 100 to get the percentage
+   // then we should divide by the total amount (the big cup capacity) and finally we multiply by 100 to get the percentage
    // amount we have / total amount * 100 = percentage
 
    sumOfcups = numOfCups * 250;
